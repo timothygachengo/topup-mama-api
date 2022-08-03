@@ -55,9 +55,9 @@ class AppPlugins {
 
     this.app.use(cors(corsOptions));
 
-    this.app.options('*', cors(corsOptions), (_, res:Response) => res.sendStatus(200));
+    this.app.options('*', cors(corsOptions), (req:Request, res:Response) => res.sendStatus(200));
 
-    this.app.options('/*', (_, res:Response) => res.sendStatus(200));
+    this.app.options('/*', (req:Request, res:Response) => res.sendStatus(200));
 
     this.app.enable('trust proxy');
     this.app.set('trust proxy', 1);
@@ -102,7 +102,7 @@ class AppPlugins {
     /**
            * This is a 404 redirect error
            */
-    this.app.use((_, res: Response, next: NextFunction) => {
+    this.app.use((req:Request, res: Response, next: NextFunction) => {
       res.status(404).format({
         json: () => {
           res.send({ err: 'Not Found' });
