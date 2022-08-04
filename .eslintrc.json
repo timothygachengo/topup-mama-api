@@ -54,6 +54,8 @@
             "error",
             "never"
         ],
+        "no-underscore-dangle": "off",
+        "@typescript-eslint/no-underscor-dangle": "off",
         "import/prefer-default-export": "off",
         "class-methods-use-this" : "off",
         "@typescript-eslint/naming-convention" : [
@@ -65,6 +67,10 @@
             { "ignoreChainWithDepth" : 3 }
         ],
         "@typescript-eslint/space-before-blocks" : "off",
-        "import/no-dependency-cycles" : "off"
+        "import/no-dependency-cycles" : "off",
+        "@typescript-eslint/indent" : [
+            "error",
+            4
+        ]
     }
 }

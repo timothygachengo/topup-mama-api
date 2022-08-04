@@ -38,18 +38,17 @@ export default {
   resolver: 'ts-jest-resolver',
 
   // A list of modulemaps to load into the test environment
-  moduleNameMapper: {
-    '^jose/(.*)$': '<rootDir>/node_modules/jose/dist/node/cjs/$1',
-    '@amerix/app': '<rootDir>/src/app.ts',
-    '@amerix/api/(.*)': '<rootDir>/src/api/$1',
-    '@amerix/config': '<rootDir>/src/config/index.ts',
-    '@amerix/core/(.*)': '<rootDir>/src/core/$1',
-    '@amerix/modules/(.*)' : '<rootDir>/src/modules/$1',
-    '@amerix/common/(.*)': '<rootDir>/src/common/$1',
-    '@amerix/database/(.*)': '<rootDir>/src/database/$1',
-    '@amerix/loaders/(.*)': '<rootDir>/src/loaders/$1',
-    '@amerix/services/(.*)': '<rootDir>/src/services/$1',
-    '@amerix/utils/(.*)': '<rootDir>/src/utils/$1'
+  moduleNameMapper: { 
+    '@topup-mama/app': '<rootDir>/src/app.ts',
+    '@topup-mama/api/(.*)': '<rootDir>/src/api/$1',
+    '@topup-mama/config': '<rootDir>/src/config/index.ts',
+    '@topup-mama/core/(.*)': '<rootDir>/src/core/$1',
+    '@topup-mama/modules/(.*)' : '<rootDir>/src/modules/$1',
+    '@topup-mama/common/(.*)': '<rootDir>/src/common/$1',
+    '@topup-mama/database/(.*)': '<rootDir>/src/database/$1',
+    '@topup-mama/loaders/(.*)': '<rootDir>/src/loaders/$1',
+    '@topup-mama/services/(.*)': '<rootDir>/src/services/$1',
+    '@topup-mama/utils/(.*)': '<rootDir>/src/utils/$1'
   },
   transform: {
     '^.+\\.ts?$': 'ts-jest',
@@ -57,15 +56,15 @@ export default {
   },
 
   // resolvers: {
-  //   '@amerix/app': '<rootDir>/src/app.ts',
-  //   '@amerix/api': '<rootDir>/src/api/*',
-  //   '@amerix/config': '<rootDir>/src/config/*',
-  //   '@amerix/core': '<rootDir>/src/core/*',
-  //   '@amerix/common': '<rootDir>/src/common/*',
+  //   '@topup-mama/app': '<rootDir>/src/app.ts',
+  //   '@topup-mama/api': '<rootDir>/src/api/*',
+  //   '@topup-mama/config': '<rootDir>/src/config/*',
+  //   '@topup-mama/core': '<rootDir>/src/core/*',
+  //   '@topup-mama/common': '<rootDir>/src/common/*',
   //   '@liac/database': '<rootDir>/src/database/*',
-  //   '@amerix/loaders': '<rootDir>/src/loaders/*',
-  //   '@amerix/services': '<rootDir>/src/services/*',
-  //   '@amerix/utils': '<rootDir>/src/utils/*'
+  //   '@topup-mama/loaders': '<rootDir>/src/loaders/*',
+  //   '@topup-mama/services': '<rootDir>/src/services/*',
+  //   '@topup-mama/utils': '<rootDir>/src/utils/*'
   // }
 
   // A list of reporter names that Jest uses when writing coverage reports
